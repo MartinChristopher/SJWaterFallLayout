@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'SJWaterFallLayout_Example' do
+  pod 'SJWaterFallLayout', :path => '../'
+
+  target 'SJWaterFallLayout_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

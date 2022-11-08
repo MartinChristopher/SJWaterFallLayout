@@ -1,0 +1,6 @@
+framework module SJWaterFallLayout {
+  umbrella header "SJWaterFallLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}

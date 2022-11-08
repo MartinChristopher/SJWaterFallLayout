@@ -1,0 +1,16 @@
+PODS:
+  - SJWaterFallLayout (0.0.1)
+
+DEPENDENCIES:
+  - SJWaterFallLayout (from `../`)
+
+EXTERNAL SOURCES:
+  SJWaterFallLayout:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SJWaterFallLayout: 69a4cdd2ecdb7c4c9cdacb1209736d501188d0eb
+
+PODFILE CHECKSUM: 57c472e7e14a21476198f2349f835fce93e3b1b9
+
+COCOAPODS: 1.11.3

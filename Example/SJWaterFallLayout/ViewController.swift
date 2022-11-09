@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SJWaterFallLayout
 
 class ViewController: UIViewController {
 
@@ -22,3 +23,10 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController: SJWaterFallLayoutDelegate {
+    
+    func setItemHeight(layouyt: SJWaterFallLayout, indexPath: IndexPath, itemWidth: CGFloat) -> CGFloat {
+        return 0
+    }
+    
+}

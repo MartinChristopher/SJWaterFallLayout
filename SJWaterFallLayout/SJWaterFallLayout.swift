@@ -6,9 +6,9 @@
 
 import UIKit
 
-@objc protocol SJWaterFallLayoutDelegate: NSObjectProtocol {
+@objc public protocol SJWaterFallLayoutDelegate: NSObjectProtocol {
     // Item高度
-    func setCellHeight(layouyt: SJWaterFallLayout, indexPath: IndexPath, itemWidth: CGFloat) -> CGFloat
+    func setItemHeight(layouyt: SJWaterFallLayout, indexPath: IndexPath, itemWidth: CGFloat) -> CGFloat
     // 列数
     @objc optional func columnCountWith(layout: SJWaterFallLayout) -> Int
     // 列间距
@@ -20,9 +20,9 @@ import UIKit
     
 }
 
-class SJWaterFallLayout: UICollectionViewLayout {
+public class SJWaterFallLayout: UICollectionViewLayout {
     
-    weak open var delegate: SJWaterFallLayoutDelegate?
+    public weak var delegate: SJWaterFallLayoutDelegate?
     fileprivate let defaultColumnCount: Int = 3       // 列数
     fileprivate let defaultColumnMargin: CGFloat = 10 // 列间距
     fileprivate let defaultRowMargin: CGFloat = 10    // 行间距
@@ -68,7 +68,7 @@ class SJWaterFallLayout: UICollectionViewLayout {
         }
     }
     
-    override func prepare() {
+    public override func prepare() {
         super.prepare()
         
         if self.collectionView == nil {
@@ -97,7 +97,7 @@ class SJWaterFallLayout: UICollectionViewLayout {
             let indexPath: IndexPath = IndexPath(item: i, section: 0)
             let attribute: UICollectionViewLayoutAttributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
             // 获取高度
-            let cellHeight: CGFloat = (self.delegate?.setCellHeight(layouyt: self, indexPath: indexPath, itemWidth: cellWidth))!
+            let cellHeight: CGFloat = (self.delegate?.setItemHeight(layouyt: self, indexPath: indexPath, itemWidth: cellWidth))!
             // 默认最小高度为第一组
             var minColumnHeight: CGFloat = self.columnHeights[0]
             var minColumn: Int = 0
@@ -133,11 +133,11 @@ class SJWaterFallLayout: UICollectionViewLayout {
         }
     }
     // 属性数组
-    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+    public override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         return self.attributes
     }
     // 内容高度
-    override var collectionViewContentSize: CGSize {
+    public override var collectionViewContentSize: CGSize {
         get {
             return CGSize(width: 0, height: CGFloat(self.contentHeight!) + CGFloat(self.edgeInsets().bottom))
         }

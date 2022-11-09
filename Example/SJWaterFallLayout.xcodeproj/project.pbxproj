@@ -30,8 +30,8 @@
 /* Begin PBXFileReference section */
 		0AD15EF7353B82E933F96026 /* Pods-SJWaterFallLayout_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJWaterFallLayout_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SJWaterFallLayout_Tests/Pods-SJWaterFallLayout_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2AE6063178DCE56077D9F72B /* Pods_SJWaterFallLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SJWaterFallLayout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C48B036DF8912EB038F882B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		3E5C0B00193419486DA8D04D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3C48B036DF8912EB038F882B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3E5C0B00193419486DA8D04D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SJWaterFallLayout_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJWaterFallLayout_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		95BEB8EB53899BDEC5686770 /* Pods-SJWaterFallLayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJWaterFallLayout_Example.release.xcconfig"; path = "Target Support Files/Pods-SJWaterFallLayout_Example/Pods-SJWaterFallLayout_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9EED9135DF296E9A26CA7D62 /* Pods-SJWaterFallLayout_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJWaterFallLayout_Example.debug.xcconfig"; path = "Target Support Files/Pods-SJWaterFallLayout_Example/Pods-SJWaterFallLayout_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BD0D68DB7B84314A1F169D93 /* Pods_SJWaterFallLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SJWaterFallLayout_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D328B653647DB381B43A32B6 /* SJWaterFallLayout.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SJWaterFallLayout.podspec; path = ../SJWaterFallLayout.podspec; sourceTree = "<group>"; };
+		D328B653647DB381B43A32B6 /* SJWaterFallLayout.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SJWaterFallLayout.podspec; path = ../SJWaterFallLayout.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,6 @@
 				0AD15EF7353B82E933F96026 /* Pods-SJWaterFallLayout_Tests.debug.xcconfig */,
 				8C8CCCA8C4D96DDA632D392D /* Pods-SJWaterFallLayout_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
